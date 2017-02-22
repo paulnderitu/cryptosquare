@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <link rel='stylesheet' type='text/css' href='http://cdn.foundation5.zurb.com/foundation.css'>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/jquery-1.11.3.min.js"></script>
+   <script src='http://cdn.foundation5.zurb.com/foundation.js'></script>
+    <script src="js/scripts.js"></script>
+    <title>Cryptosquare</title>
+  </head>
+  <body>
+    <div>
+      <div class="row text-center">
+        <h1>Cryptosquare</h1>
+      </div>
+
+      <form id="message_form" data-abide>
+        <div class="row">
+          <div class="large-2 columns">
+            <label class="right inline" for="message">Message:</label>
+          </div>
+          <div class="large-8 columns">
+            <input name="message" required type="text" id="message">
+            <small class="error">You must enter a value!</small>
+          </div>
+          <div class="large-2 columns">
+            <button class="button tiny" type="submit">Encrypt</button>
+          </div>
+        </div>
+      </form>
+
+      <!-- MODAL -->
+      <div id="myModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+        <h2 id="modalTitle">Your Encrypted Message:</h2>
+        <p class="lead"><span id="encrypted-message"></span></p>
+        <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+      </div>
+
+    </div>
+  </body>
+</html>
